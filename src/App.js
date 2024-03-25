@@ -4,24 +4,17 @@ import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import About from "./pages/about";
 
-
-
-
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/blog", element: <Blog /> }
-  
+  { path: "/blog", element: <Blog /> },
 ]);
 
 function App() {
   return (
-    < >
-     
-     <Navbar/>
-     <RouterProvider router={router}/>
-        
+    <>
+      <RouterProvider router={router} />
     </>
   );
 }
