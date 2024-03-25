@@ -7,6 +7,7 @@ import About from "./pages/about";
 
 
 
+
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
   { path: "/about", element: <About /> },
@@ -19,7 +20,7 @@ function App() {
   return (
     < >
      
-     <Navbar/>
+     
      <RouterProvider router={router}/>
         
     </>
