@@ -4,6 +4,7 @@ import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import About from "./pages/about";
 
+
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
   { path: "/about", element: <About /> },
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
+
+    < >
+     
+     
+     <RouterProvider router={router}/>
+
     </>
   );
 }
