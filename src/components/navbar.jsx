@@ -12,7 +12,7 @@ function NavBar() {
                     <div className="flex space-x-4">
                         <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/">Home</Link>
                         <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/about">About</Link>
-                        <Link className="block px-4 py-2 text-black hover:bg-yellow-900" to="/projets">Projects</Link>
+                        <Link className="block px-4 py-2 text-black hover:bg-yellow-900" to="/projects">Projects</Link>
                         <Link className="block px-4 py-2 text-black hover:bg-yellow-900" to="/blog">Blog</Link>
                         <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/contact">Contact</Link>
                     </div>
