@@ -6,15 +6,15 @@ function NavBar() {
         <nav className="bg-gray-300 fixed top-0 w-full z-50 h-12">
             <div className="container mx-auto h-full flex items-center justify-between">
                 <div className="flex-shrink-0">
-                    <a className="text-black text 3xl text-bold hover:bg-white px-3 py-2 rounded-md" href="http://virtual-dawn.com/index_english.html" target="_blank" rel="noopener noreferrer">Team TOPAZ</a>
+                    <a className="text-yellow-900 text 5xl text-bold hover:bg-white px-3 py-2 rounded-md" href="http://virtual-dawn.com/index_english.html" target="_blank" rel="noopener noreferrer">Team TOPAZ</a>
                 </div>
                 <div className="hidden md:block text-bold bg-yellow-900 bg-opacity-30">
                     <div className="flex space-x-4">
-                        <Link className="text-black hover:bg-white px-3 py-2 rounded-md flex items-center" to="/">Home</Link>
-                        <Link className="text-black hover:bg-white px-3 py-2 rounded-md flex items-center" to="/about">About</Link>
-                        <Link className="block px-4 py-2 text-gray-800 hover:bg-gray-200" to="/projets">Projects</Link>
-                        <Link className="block px-4 py-2 text-gray-800 hover:bg-gray-200" to="/blog">Blog</Link>
-                        <Link className="text-black hover:bg-white px-3 py-2 rounded-md flex items-center" to="/contact">Contact</Link>
+                        <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/">Home</Link>
+                        <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/about">About</Link>
+                        <Link className="block px-4 py-2 text-black hover:bg-yellow-900" to="/projets">Projects</Link>
+                        <Link className="block px-4 py-2 text-black hover:bg-yellow-900" to="/blog">Blog</Link>
+                        <Link className="text-black hover:bg-yellow-900 px-3 py-2 rounded-md flex items-center" to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>
