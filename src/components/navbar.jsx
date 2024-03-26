@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <nav className="bg-gray-300 fixed top-0 w-full z-50 h-12">
+        <nav className="bg-gray-300 fixed top-0 w-full z-50 h-12 px-3 rounded-md">
             <div className="container mx-auto h-full flex items-center justify-between">
                 <div className="flex-shrink-0">
-                    <a className="text-yellow-900 text 5xl text-bold hover:bg-white px-3 py-2 rounded-md" href="http://virtual-dawn.com/index_english.html" target="_blank" rel="noopener noreferrer">Team TOPAZ</a>
+                    <Link className="text-yellow-900 text 5xl text-bold hover:bg-white px-3 py-2 rounded-md" to="/">Team TOPAZ</Link>
                 </div>
                 <div className="hidden md:block text-bold bg-yellow-900 bg-opacity-30">
                     <div className="flex space-x-4">
