@@ -1,149 +1,111 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Projectpost(props) {
+function ProjectPost() {
   return (
-    <div>
-      <ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
-        <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
-          <div class="order-1 sm:ml-6 xl:ml-0">
-            <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-              <span class="mb-1 block text-sm leading-6 text-indigo-500">
-                Headless UI
-              </span>
-              Completely unstyled, fully accessible UI components
-            </h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-              <p>
-                Completely unstyled, fully accessible UI components, designed to
-                integrate beautifully with Tailwind CSS.
-              </p>
+    <>
+    <section className="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
+      <div className="flex flex-wrap items-center justify-between mb-8">
+        <h2 className="mr-10 text-2xl font-bold leading-none md:text-3xl">
+          View projects below
+        </h2>
+        {/* <Link to="#"
+            className="block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">
+            Go to insights 
+        </Link> */}
+      </div>
+
+      <div className="flex flex-wrap -mx-4">
+        <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
+          <img src="https://source.unsplash.com/Lki74Jj7H-U/400x300" alt="Card img" className="object-cover object-center w-full h-48" />
+          <div className="flex flex-grow">
+            {/* <div className="triangle"></div> */}
+            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+              <div>
+                <Link to="#"
+                  className="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">Reliable
+                  Schemas</Link>
+                <Link to="#"
+                  className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                  What Zombies Can Teach You About Food
+                </Link>
+                <p className="mb-4">
+                  Lorem ipsum dolor, sit abet consectetur adipisicing elia. Nullo dejects corporis commodi
+                  aperiam, amet cupiditate?
+                </p>
+              </div>
+              <div>
+                <Link to="#"
+                  className="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">Read
+                  More </Link>
+              </div>
             </div>
-            <a
-              class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
-              href="https://headlessui.dev"
-            >
-              Learn more
-              <span class="sr-only">
-                , Completely unstyled, fully accessible UI components
-              </span>
-              <svg
-                class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
-                width="3"
-                height="6"
-                viewBox="0 0 3 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M0 0L3 3L0 6"></path>
-              </svg>
-            </a>
           </div>
+        </div>
+
+        <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
           <img
-            src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg"
-            alt=""
-            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
-            width="1216"
-            height="640"
+            src="https://source.unsplash.com/L9_6GOv40_E/400x300"
+            alt="Card img"
+            className="object-cover object-center w-full h-48"
           />
-        </li>
-        <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
-          <div class="order-1 sm:ml-6 xl:ml-0">
-            <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-              <span class="mb-1 block text-sm leading-6 text-purple-500">
-                Heroicons
-              </span>
-              Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
-            </h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-              <p>
-                A set of 450+ free MIT-licensed SVG icons. Available as basic
-                SVG icons and via first-party React and Vue libraries.
-              </p>
+          <div className="flex flex-grow">
+            {/* <div className="triangle"></div> */}
+            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400">
+              <div>
+                <Link to="#"
+                  className="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">Client-based
+                  Adoption</Link>
+                <Link to="#"
+                  className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                  Old School Art
+                </Link>
+                <p className="mb-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus.
+                </p>
+              </div>
+              <div>
+                <Link to="#"
+                  className="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">Read
+                  More </Link>
+              </div>
             </div>
-            <a
-              class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
-              href="https://heroicons.com"
-            >
-              Learn more
-              <span class="sr-only">
-                , Beautiful hand-crafted SVG icons, by the makers of Tailwind
-                CSS.
-              </span>
-              <svg
-                class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
-                width="3"
-                height="6"
-                viewBox="0 0 3 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M0 0L3 3L0 6"></path>
-              </svg>
-            </a>
           </div>
+        </div>
+
+        <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
           <img
-            src="https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg"
-            alt=""
-            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
-            width="1216"
-            height="640"
+            src="https://source.unsplash.com/7JX0-bfiuxQ/400x300"
+            alt="Card img"
+            className="object-cover object-center w-full h-48"
           />
-        </li>
-        <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
-          <div class="order-1 sm:ml-6 xl:ml-0">
-            <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-              <span class="mb-1 block text-sm leading-6 text-cyan-500">
-                Hero Patterns
-              </span>
-              Seamless SVG background patterns by the makers of Tailwind CSS.
-            </h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-              <p>
-                A collection of over 100 free MIT-licensed high-quality SVG
-                patterns for you to use in your web projects.
-              </p>
+          <div className="flex flex-grow">
+            {/* <div className="triangle"></div> */}
+            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400">
+              <div>
+                <Link to="#"
+                  className="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">Intellectual
+                  Capital</Link>
+                <Link to="#"
+                  className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                  5 Things To Do About Rain
+                </Link>
+                <p className="mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, neque. Eius, ea possimus.
+                </p>
+              </div>
+              <div>
+                <Link to="#"
+                  className="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">Read
+                  More </Link>
+              </div>
             </div>
-            <a
-              class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
-              href="https://heropatterns.com"
-            >
-              Learn more
-              <span class="sr-only">
-                , Seamless SVG background patterns by the makers of Tailwind
-                CSS.
-              </span>
-              <svg
-                class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
-                width="3"
-                height="6"
-                viewBox="0 0 3 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M0 0L3 3L0 6"></path>
-              </svg>
-            </a>
           </div>
-          <img
-            src="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg"
-            alt=""
-            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
-            width="1216"
-            height="640"
-          />
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }
 
-export default Projectpost;
+export default ProjectPost;
