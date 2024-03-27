@@ -39,7 +39,7 @@ function AboutUs() {
                         We are dedicated to leveraging our skills to craft innovative solutions for the digital world. 
                          
                           We believe in the power of collaboration, attention to detail, and a relentless pursuit of excellence.<span>Let's create something amazing together!</span></p>
-                        <div className="data">
+                        <div className="button">
                             <Link to="/contact" className="hire text-lg bg-yellow-800 text-bold text-black py-2 px-6 rounded-full inline-block transition duration-500 ease-in-out hover:bg-gray-300 hover:border-black border hover:border-solid border-black">Hire </Link>
                         </div>
                     </div>
