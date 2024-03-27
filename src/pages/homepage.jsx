@@ -8,7 +8,7 @@ function Homepage() {
         <>
         <Navbar/>
         <Hero/>
-        <Footer/>
+
         </>
     );
 }
