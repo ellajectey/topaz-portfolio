@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import Addpost from "../components/addpost";
-// import AddExperience from "../components/addExperience";
-// import Addachievement from "../components/addachievement";
 import PostModal from "../components/postModal";
 import ExperienceModal from "../components/experienceModal";
 import AchievementModal from "../components/achievementModal";
@@ -13,6 +10,9 @@ function Admin() {
 
   const openPostModal = () => {
     setPostModalOpen(true);
+    // Close other modals
+    setExperienceModalOpen(false);
+    setAchievementModalOpen(false);
   };
 
   const closePostModal = () => {
@@ -21,6 +21,9 @@ function Admin() {
 
   const openExperienceModal = () => {
     setExperienceModalOpen(true);
+    // Close other modals
+    setPostModalOpen(false);
+    setAchievementModalOpen(false);
   };
 
   const closeExperienceModal = () => {
@@ -29,6 +32,9 @@ function Admin() {
 
   const openAchievementModal = () => {
     setAchievementModalOpen(true);
+    // Close other modals
+    setPostModalOpen(false);
+    setExperienceModalOpen(false);
   };
 
   const closeAchievementModal = () => {
@@ -37,136 +43,65 @@ function Admin() {
 
   return (
     <div>
-      <div class="flex h-screen bg-gray-100">
-        {/* <!-- sidebar --> */}
-        <div class="hidden md:flex flex-col w-64 bg-gray-800">
-          <div class="flex items-center justify-center h-16 bg-gray-900">
-            <span class="text-white font-bold uppercase">Portfolio Admin</span>
+      <div className="flex h-screen bg-gray-100">
+        <div className="hidden md:flex flex-col w-64 bg-gray-800">
+          <div className="flex items-center justify-center h-16 bg-gray-900">
+            <span className="text-white font-bold uppercase">
+              Portfolio Admin
+            </span>
           </div>
-          <div class="flex flex-col flex-1 overflow-y-auto">
-            <nav class="flex-1 px-2 py-4 bg-gray-800">
+          <div className="flex flex-col flex-1 overflow-y-auto">
+            <nav className="flex-1 px-2 py-4 bg-gray-800">
               <a
                 href="#"
-                class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700"
+                className="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700"
                 onClick={openAchievementModal}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
                 Add Achievement
               </a>
               <a
                 href="#"
-                class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700"
+                className="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700"
                 onClick={openPostModal}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
                 Add Post
               </a>
               <a
                 href="#"
-                class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700"
+                className="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700"
                 onClick={openExperienceModal}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
                 Add Experience
               </a>
             </nav>
           </div>
         </div>
 
-        {/* <!-- Main content --> */}
-        <div class="flex flex-col flex-1 overflow-y-auto">
-          <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200">
-            <div class="flex items-center px-4">
-              <button class="text-gray-500 focus:outline-none focus:text-gray-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-              {/* <input
-                class="mx-4 w-full border rounded-md px-4 py-2"
-                type="text"
-                placeholder="Search"
-              /> */}
-            </div>
-            <div class="flex items-center pr-4">
-              <button class="flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 19l-7-7 7-7m5 14l7-7-7-7"
-                  />
-                </svg>
-              </button>
-            </div>
+        <div className="flex flex-col flex-1 overflow-y-auto">
+          <div className="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+            {/* Header content */}
           </div>
-          <div class="p-4">
-            <h1 class="text-2xl font-bold">Welcome to my dashboard!</h1>
-            <p className="mt-2 text-gray-600 ">
-              <img src = './src/assets/images/Admin-rafiki.svg'alt= "admin svg illustration"/>
-              This is an example dashboard using Tailwind CSS.
+          <div className="p-4">
+            <h1 className="text-3xl font-bold">Welcome Topaz</h1>
+            <p className="mt-2 text-gray-600">
+              {/* Other content */}
             </p>
-            {/* Render modals */}
-            <PostModal isOpen={isPostModalOpen} onClose={closePostModal} />
-            <ExperienceModal isOpen={isExperienceModalOpen} onClose={closeExperienceModal} />
-            <AchievementModal isOpen={isAchievementModalOpen} onClose={closeAchievementModal} />
+            {/* Render modals based on state */}
+            {isPostModalOpen && (
+              <PostModal isOpen={isPostModalOpen} onClose={closePostModal} />
+            )}
+            {isExperienceModalOpen && (
+              <ExperienceModal
+                isOpen={isExperienceModalOpen}
+                onClose={closeExperienceModal}
+              />
+            )}
+            {isAchievementModalOpen && (
+              <AchievementModal
+                isOpen={isAchievementModalOpen}
+                onClose={closeAchievementModal}
+              />
+            )}
           </div>
         </div>
       </div>
