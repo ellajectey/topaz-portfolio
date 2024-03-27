@@ -22,10 +22,10 @@ function Skill1({ limitToFour }) {
                 <h3 className="text-xl font-semibold mb-4">Languages & Expertise:</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {displaySkills.map((skill, index) => (
-                        <a key={index} href="/about" className="block max-w-sm p-6 bg-yellow-900 border-4 border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition hover:bg-opacity-60 hover:bg-yellow-900">
+                        <a key={index} href="/about" className="block max-w-sm p-6 bg-yellow-900 border-4 border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition hover:bg-gray-500">
                             <FontAwesomeIcon icon={skill.icon} className="text-white text-bold text-2xl mb-2" /> {/* Use skill's specific Font Awesome icon */}
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">{skill.title}</h5>
-                            <p className="font-meduim text-white dark:text-gray-400">{skill.description}</p>
+                            <p className="font-meduim text-bold text-white dark:text-gray-400">{skill.description}</p>
                         </a>
                     ))}
                 </div>
