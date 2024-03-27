@@ -14,12 +14,12 @@ const ContactForm = () => {
           <div className="md:w-1/2 py-32 px-10 md:mr-4">
               <form className="text-center">
                   <h2 className="text-2xl font-bold lg-view">Contact Us</h2>
-                  <input type="text" placeholder="Name *" className="rounded-lg p-2 mt-4 w-full border-4 border-yellow-900" required />
-                  <input type="email" placeholder="Email *" className="rounded-lg p-2 mt-4 w-full border-4 border-yellow-900" required />
-                  <input type="text" placeholder="Company" className="rounded-lg p-2 mt-4 w-full border-4 border-yellow-900" />
-                  <input type="phone" placeholder="Phone" className="rounded-lg p-2 mt-4 w-full border-4 border-yellow-900" />
-                  <textarea rows="4" placeholder="Message" className="rounded-lg p-2 mt-4 w-full border-4 border-yellow-900"></textarea>
-                  <button type="submit" className="bg-yellow-900 text-black px-6 py-2 rounded-lg mt-4">Submit</button>
+                  <input type="text" placeholder="Name *" className="rounded-lg p-2 mt-4 w-full border-2 border-yellow-900" required />
+                  <input type="email" placeholder="Email *" className="rounded-lg p-2 mt-4 w-full border-2 border-yellow-900" required />
+                  <input type="text" placeholder="Company" className="rounded-lg p-2 mt-4 w-full border-2 border-yellow-900" />
+                  <input type="phone" placeholder="Phone" className="rounded-lg p-2 mt-4 w-full border-2 border-yellow-900" />
+                  <textarea rows="4" placeholder="Message" className="rounded-lg p-2 mt-4 w-full border-2 border-yellow-900"></textarea>
+                  <button type="submit" className="bg-yellow-900 text-black px-6 py-2 rounded-lg mt-4 border-2 border-whie">Submit</button>
               </form>
           </div>
       </div>
