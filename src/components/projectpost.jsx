@@ -30,7 +30,7 @@ function ProjectPost() {
                   className=" mt-4 transition-500 duration-300  hover:text-2xl"
                 >
                   <span className="border-b-2 border-yellow-900 text-black no-underline">
-                    Read More
+                    Explore Our Domain
                   </span>
                 </Link>
               </div>
@@ -53,7 +53,7 @@ const projects = [
     link: "https://meltech.vercel.app/",
   },
   {
-    image: "https://source.unsplash.com/L9_6GOv40_E/400x300",
+    image: "https://images.unsplash.com/photo-1598133893847-a3b6858156d6?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Pet App Insurance",
     category: "HTML | CSS",
     description:
@@ -61,32 +61,32 @@ const projects = [
     link: "https://pet-insurance-landing-page-39b9.vercel.app/",
   },
   {
-    image: "https://source.unsplash.com/7JX0-bfiuxQ/400x300",
-    title: "Real Estate Landing Page",
+    image: "https://images.unsplash.com/photo-1602497485099-e41a116a272c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Construction Landing Page",
     category: "HTML | CSS",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, neque. Eius, ea possimus.",
     link: "https://landing-phi-lyart.vercel.app/",
   },
   {
-    image: "https://source.unsplash.com/n4xHxT1xN2M/400x300",
-    title: "Urban Exploration",
-    category: "Adventure Photography",
+    image: "https://plus.unsplash.com/premium_photo-1661854008793-8ce54b2e622b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Topaz Agro Commerce",
+    category: "HTML | CSS | JAVASCRIPT",
     description: "Discovering hidden gems in the heart of the city.",
-    link: "/project/4"
+    link: "https://topaz-melomey.vercel.app/#about-landing"
 },
 {
-    image: "https://source.unsplash.com/wU2E8H7l88I/400x300",
-    title: "Gourmet Delights",
-    category: "Culinary Arts",
-    description: "Exploring the artistry and flavors of gourmet cuisine.",
-    link: "/project/5"
+    image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "JSE MOVIE APP",
+    category: "REACT JS",
+    description: "Explore the world of movies at the comfort of your home.",
+    link: "https://topaz-movie.vercel.app/movie"
 },
 {
-    image: "https://source.unsplash.com/C94O7ih90Q0/400x300",
-    title: "Infinite Horizons",
-    category: "Landscape Photography",
-    description: "Capturing the vast beauty of nature's landscapes.",
+    image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Team Portfolio",
+    category: "REACT JS | NODE JS | MONGODB",
+    description: "Welcome to our domain. We bring your ideas to live with our exceptional skills.",
     link: "/project/6"
 }
 ];
