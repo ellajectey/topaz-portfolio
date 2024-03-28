@@ -16,15 +16,15 @@ function Skill1({ limitToFour }) {
     const displaySkills = limitToFour ? skills.slice(0, 4) : skills;
 
     return (
-        <section className="py-16 bg-gray-300 text-center">
+        <section className="py-16 bg-gray-200 text-center">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold mb-6">Competences</h2>
                 <h3 className="text-xl font-semibold mb-4">Languages & Expertise:</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {displaySkills.map((skill, index) => (
-                        <a key={index} href="/about" className="block max-w-sm p-6 bg-yellow-900 border-4 border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition hover:bg-gray-500">
+                        <a key={index} href="/about" className="block max-w-sm p-6 bg-yellow-700 border-4 border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition hover:bg-gray-900">
                             <FontAwesomeIcon icon={skill.icon} className="text-white text-bold text-2xl mb-2" /> {/* Use skill's specific Font Awesome icon */}
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">{skill.title}</h5>
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white hover:text-white">{skill.title}</h5>
                             <p className="font-meduim text-bold text-white dark:text-gray-400">{skill.description}</p>
                         </a>
                     ))}
