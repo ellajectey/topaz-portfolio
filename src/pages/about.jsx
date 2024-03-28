@@ -28,7 +28,7 @@ function AboutUs() {
 
                         We believe in the power of collaboration, attention to detail, and a relentless pursuit of excellence.<span>Let's create something amazing together!</span></p>
                         <div className="data">
-                            <Link to="/contact" className="hire text-lg bg-yellow-500 text-bold text-black py-2 px-6 rounded-full inline-block transition duration-500 ease-in-out hover:bg-gray-300  ">Hire Me</Link>
+                            <Link to="/contact" className="hire text-lg bg-yellow-500 text-bold text-black py-2 px-6 rounded-full inline-block transition duration-500 ease-in-out hover:bg-gray-300  ">Hire Us</Link>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ function AboutUs() {
             <div className="rounded-t-lg h-32 overflow-hidden">
                 <img className="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain' />
             </div>
-            <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-yellow-800 rounded-full overflow-hidden">
+            <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
                 <img className="object-cover object-center h-32" src={EJ_Image} alt='E J' />
             </div>
             <div className="text-center mt-2">
