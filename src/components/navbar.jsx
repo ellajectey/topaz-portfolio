@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <nav className="bg-black fixed top-0 w-full z-50 h-12 px-3 rounded-md">
+        <nav className="bg-black fixed top-0 w-full z-50 h-12 px-3">
             <div className="container mx-auto h-full flex items-center justify-between">
                 <div className="flex-shrink-0">
                     <Link className="text-yellow-500 text 5xl text-bold font-bold" to="/">TOPAZ PORTFOLIO</Link>
