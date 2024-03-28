@@ -23,7 +23,6 @@ function Experience() {
 
     return (
         <div>
-<<<<<<< HEAD
           <section className="mx-auto px-6 py-10 mt-10  bg-gradient-to-r from-gray-200 to-stone-100">
       <h2 className="text-3xl font-bold mb-8">View Our Experiences</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -51,32 +50,6 @@ function Experience() {
               </span>
                 
               </div>
-=======
-            <section className="py-16 bg-gray-100 ">
-            <div className="container mx-auto">
-                <h2 className="text-3xl font-bold mb-8">Experiences</h2>
-                <div className="flowbite-card mb-8">
-                    <div className="flowbite-card-content">
-                        <h3 className="text-xl font-semibold mb-4">Subtopic:</h3>
-                        <p className="mb-4 text-m">Descriptions:</p>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            
-                            {/* default card */}
-                            <a href="/blog" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-yellow-700 dark:text-white">Sample Experience</h5>
-                                <p className="font-normal text-black dark:text-gray-400">The language of the web, used for both front-end and back-end development.</p>
-                            </a>
-                            {
-                                experiences.map((experience, key) => {
-                                    return (
-                                        <div key={key}>{experience} {key + 1}</div>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
-                </div>
->>>>>>> 69c26a4a2f96fa1ecd5f3207af1456669663eba3
             </div>
           </a>
         ))}
