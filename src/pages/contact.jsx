@@ -24,7 +24,6 @@ const ContactForm = () => {
                                     </svg>
                                 </div>
                                 <a target="blank" href="https://topazalpha@gmail.com" className="text-black text-m ml-3">
-                                    <small className="text-black text-xl block font-[sans-serif]">Mail</small>
                                     <strong className='text-m'>https://topazalpha@gmail.com</strong>
                                 </a>
                             </li>
@@ -77,7 +76,7 @@ const ContactForm = () => {
                     <textarea placeholder='Message' rows="6"
                         class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
                     <button type='button'
-                        class="text-white bg-[#301934] hover:bg-purple-500 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
+                        class="text-white bg-yellow-900 bg-opacity-80 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
                 </form>
             </div>
         </div>

@@ -4,12 +4,12 @@ export default function Hero() {
     return (
         <>
         <div className="relative">
-            <div className="intro-header bg-gray-500 py-16">
+            <div className="intro-header bg-gray-200 py-16">
                 <div className="p-10 container mx-auto mt-4 top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center">
-                    <div className="text-center text-white bg-yellow-900 bg-opacity-30 p-4 mt-4 md:p-8 rounded-md">
+                    <div className="text-center text-white bg-yellow-900 bg-opacity-60 p-4 mt-4 md:p-8 rounded-md">
                         <h1 className="text-5xl font-bold pt-32 pt-5 animate-bounce">Hello!</h1>
                         <h3 className="text-2xl text-bold text-black text-shadow mt-4">🌟 Welcome to Topaz Portfolio</h3>
-                        <h4 className="text-2xl text-bold text-shadow mt-2 text-yellow-900">Where Awesomeness Is Brought To Life!💻</h4>
+                        <h4 className="text-2xl text-bold text-shadow mt-2 text-yellow-700">Where Awesomeness Is Brought To Life!💻</h4>
                         <hr className="w-3/4 border-t border-gray-200 border-b border-gray-200 mx-auto mb-4" />
                         <ul className="list-inline intro-social-buttons text-bold text-white flex justify-center">
                             <li>
@@ -26,7 +26,7 @@ export default function Hero() {
                             </li>
                         </ul>
 
-                        <Link to="/about" className="hire mt-10 text-lg bg-yellow-900 text-bold text-white py-2 px-6 rounded-full inline-block transition duration-500 ease-in-out hover:bg-gray-500 hover:border-black border hover:border-solid border-black animate-bounce">Get to know us</Link>
+                        <Link to="/about" className="hire mt-10 text-lg bg-yellow-700 text-bold text-white py-2 px-6 rounded-full inline-block transition duration-500 ease-in-out hover:bg-gray-500 hover:border-black border hover:border-solid border-black animate-bounce">Get to know us</Link>
                     </div>
                 </div>
             </div>
