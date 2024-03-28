@@ -28,13 +28,13 @@ function Experience() {
                 <div className="flowbite-card mb-8">
                     <div className="flowbite-card-content">
                         <h3 className="text-xl font-semibold mb-4">Subtopic:</h3>
-                        <p className="mb-4">Descriptions:</p>
+                        <p className="mb-4 text-m">Descriptions:</p>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             
                             {/* default card */}
                             <a href="/blog" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sample Experience</h5>
-                                <p className="font-normal text-gray-700 dark:text-gray-400">The language of the web, used for both front-end and back-end development.</p>
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-yellow-700 dark:text-white">Sample Experience</h5>
+                                <p className="font-normal text-black dark:text-gray-400">The language of the web, used for both front-end and back-end development.</p>
                             </a>
                             {
                                 experiences.map((experience, key) => {
