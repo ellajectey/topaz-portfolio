@@ -9,6 +9,7 @@ import SM_Image from '../assets/images/s_m.jpg';
 import Skill1 from '../components/skills/skill-1';
 import Skill2 from '../components/skills/skill-2';
 import Experience from '../components/experience';
+import Achievement from '../components/achievement';
 
 function AboutUs() {
     return (
@@ -91,8 +92,10 @@ function AboutUs() {
             
             <Skill1 />
             <Skill2 />
+            <Experience/>
+            <Achievement/>
 
-            <Experience />
+           
 
         </>
     );

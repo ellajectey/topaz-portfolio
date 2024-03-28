@@ -6,9 +6,9 @@ function ProjectPost() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const fetchStuff = async () => {
+    const  fetchPosts= async () => {
       try {
-        const response = await fetch(`https://topaz-portfolio-api.onrender.com/getpost`) //fetch(`${process.env.REACT_APP_PORTFOLIO_API}/get-achievement`);
+        const response = await fetch(`${process.env.REACT_APP_PORTFOLIO_API}/getpost`);
         const postsResponse = await response.json();
         if (Array.isArray(postsResponse)) {
           setPosts(postsResponse);
@@ -19,7 +19,7 @@ function ProjectPost() {
 
     };
 
-    fetchStuff();
+    fetchPosts();
   }, []);
 
   return (
@@ -47,7 +47,7 @@ function ProjectPost() {
               <p className="text-gray-700 truncate ...">{post.description}</p>
               <div className="mt-4">
                 <Link
-                  to={post.link}
+                  to={post.url}
                   target="_blank"
                   className=" mt-4 transition-500 duration-300  hover:text-2xl"
                 >
@@ -61,35 +61,10 @@ function ProjectPost() {
         ))}
       </div>
     </section>
+    
     </>
   );
 }
 
-const projects = [
-  {
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
-    title: "Why HTML And CSS Is Necessary For Frontend Development",
-    category: "HTML|CSS",
-    description:
-      "HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are essential for frontend development for several reasons",
-    link: "https://medium.com/@wknycfqyb/why-html-and-css-is-necessary-for-frontend-development-d0169f498458",
-  },
-  {
-    image: "https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png",
-    title: "Unveiling the Power of JavaScript: A Cornerstone of Web Development",
-    category: "JAVASCRIPT | WEB DEVELOPMENT",
-    description:
-      "JavaScript stands as the cornerstone of modern web development, empowering developers to create dynamic and interactive web experiences. Born out of the necessity to bring life to static web pages, JavaScript has evolved into a versatile and ubiquitous programming language that drives the web forward.",
-    link: "",
-  },
-  {
-    image: "https://source.unsplash.com/7JX0-bfiuxQ/400x300",
-    title: "5 Things To Do About Rain",
-    category: "Intellectual Capital",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, neque. Eius, ea possimus.",
-    link: "/project/3",
-  },
-];
 
 export default ProjectPost;
